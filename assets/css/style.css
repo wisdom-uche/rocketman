@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* color variables */
+:root {
+    --primary-color: #191919;
+    --secondary-color: #8D5FC5;
+    --position-one-color: #303030;
+    --position-two-color: #E2E6EA;
+    --border-color: #e3dcdc;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+    --footer-color: #858585;
+}
+
+/* navbar */
+/* navbar */
+#navbar {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    top: 0;
+}
+#navbar ul li {
+    display: inline;
+    padding: 0 2rem;
+}
+#navbar ul li a {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    font-weight: 300;
+}
+
+/* banner */
+/* banner */
+#bar {
+    background-image: url("/assets/img/banner.jpg");
+    background-size: cover;
+    background-position: center center ;
+    height: 95vh;
+}
+#bar .bar1 {
+    height: 95vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#bar .bar1 .bar2 {
+    color: white;
+    width: 80%;
+    margin: auto;
+    padding: 11rem 1rem;
+}
+#bar .bar1 .bar2 h3{
+    font-size: 3.8rem;
+    font-weight: 300;
+}
+#bar .bar1 .bar2 p{
+    font-size: 1.7rem;
+    padding-top: 0.5rem;
+    padding-bottom: 2.5rem;
+    letter-spacing: 0.1rem;
+}
+#bar .bar1 .bar2 a{
+    padding: 1rem 2rem;
+    color: var(--primary-color);
+    background-color: white;
+    letter-spacing: 0.2rem;
+}
+
+/* professional-section */
+/* professional-section */
+#prof p {
+    text-align: center;
+    padding: 6rem 0;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    font-weight: 300;
+}
+
+/* service-contact */
+/* service-contact */
+#box {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 2rem;
+}
+#box .box-serv, 
+#box .box-cont {
+    height: 80vh;
+    width: 50vw;
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+#box .box-serv .box-serv1 img, 
+#box .box-cont .box-cont1 img {
+    width: 100%;
+    height: 50vh;
+}
+#box .box-serv .box-serv2 h3, 
+#box .box-cont .box-cont2 h3 {
+    color: var(--black-color);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+#box .box-serv .box-serv2 p, 
+#box .box-cont .box-cont2 p {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: 0 2rem;
+    padding-bottom: 1rem;
+}
+#box .box-serv .box-serv2 span, 
+#box .box-cont .box-cont2 span {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+/* more details1-self landing */
+/* more details1-self landing */
+#self {
+    width: 80%;
+    margin: 7rem auto;
+}
+#self .self1,
+#clean .clean1, 
+#gas .gas1 {
+    position: relative;
+}
+#self .self1 a img,
+#gas .gas1 a img {
+    width: 50vw;
+}
+#self .self2 {
+    position: absolute;
+    background-color: var(--position-one-color);
+    color: var(--white-color);
+    right: 18%;
+    top: 283%;
+    padding: 3rem 3.5rem 3rem 3rem;
+    width: 30vw;
+}
+#self .self2 h3,
+#clean .clean2 h3,
+#gas .gas2 h3 {
+    font-size: 2rem;
+}
+#self .self2 p,
+#clean .clean2 p,
+#gas .gas2 p {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+#self .self2 a,
+#clean .clean2 a,
+#gas .gas2 a {
+    background-color: var(--position-two-color);
+    color: var(--primary-color);
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+/* more details2-we'll clean */
+/* more details2-we'll clean */
+#clean {
+    width: 80%;
+    margin: 10rem auto;
+}
+#clean .clean1 img {
+    width: 50vw;
+    margin-left: 28rem;
+}
+#clean .clean2 {
+    position: absolute;
+    background-color: var(--position-one-color);
+    color: var(--white-color);
+    right: 51%;
+    top: 380%;
+    padding: 3rem 3.5rem 3rem 3rem;
+    width: 30vw;
+}
+
+/* more details3-rockets are gas */
+/* more details3-rockets are gas */
+#gas {
+    width: 80%;
+    margin: 11rem auto;
+}
+#gas .gas2 {
+    position: absolute;
+    background-color: var(--position-one-color);
+    color: var(--white-color);
+    right: 19%;
+    top: 468%;
+    padding: 3rem 3.5rem 3rem 3rem;
+    width: 31vw;
+}
